@@ -165,5 +165,9 @@
   .contact-title {
     font-size: 40px;
   }
+  .form-container input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+  }
  
 }
