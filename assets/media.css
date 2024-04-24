@@ -18,12 +18,9 @@
   .main-offer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
   }
   .main{
 
-    background-size: cover;
   }
   .main-offer__text {
     margin: 0 auto;
@@ -34,8 +31,9 @@
   .main-offer__subtitle {
     max-width: 80%;
   }
-  .main-offer__image {
+  .main-offer__image{
     width: 100%;
+    margin-top: 20px;
   }
   .welcome-offer {
     display: flex;

@@ -34,7 +34,6 @@ body {
 .main {
   background: url(../assets/main-bg.jpeg);
   background-size: cover;
-  padding-bottom: 50px;
   height: 100vh;
 }
 
