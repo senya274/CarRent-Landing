@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Car Rent Landing</title>
+</head>
+
+<body>
+    <section class="main" id="main">
+        <header class="header">
+            <div class="header-top__nav">
+                <div class="top-nav__links">
+                    <div class="top-nav__number">
+                        <a href="tel:+38093-513-24155">+38093-513-24155</a>
+                    </div>
+                    <div class="top-nav__location">
+                        <p>Ukraine, Kyiv</p>
+                    </div>
+                </div>
+                <div class="top-nav__social">
+                    <div class="nav-social__icon">
+                        <a href="#">
+                        <img src="assets/facebook.png" alt="">
+                    </a>
+                    </div>
+                    <div class="nav-social__icon">
+                        <a href="#">
+                        <img src="assets/twitter.png" alt="">
+                    </a>
+                    </div>
+                    <div class="nav-social__icon">
+                        <a href="#">
+                        <img src="assets/instagram.png" alt="">
+                    </a>
+                    </div>
+                    <div class="nav-social__icon">
+                        <a href="#">
+                        <img src="assets/pinterest.png" alt="">
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="header-bot__nav">
+                <div class="bot-nav__logo">
+                    <p>Rent-</p>
+                    <span>End</span>
+                </div>
+                <div class="bot-nav__links">
+                    <div class="bot-nav__link">
+                        <a href="#welcome">About</a>
+                    </div>
+                    <div class="bot-nav__link">
+                        <a href="#rent">Rent</a>
+                    </div>
+                    <div class="bot-nav__link">
+                        <a href="#rating">Pricing</a>
+                    </div>
+                    <div class="bot-nav__link">
+                        <a href="#contact">Contacts</a>
+                    </div>
+                   
+
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="main-offer">
+                <div class="main-offer__image">
+                    <img src="assets/main-car.png" alt="">
+                </div>
+
+                <div class="main-offer__text">
+                    <h1 class="main-offer__title">Book A Car Today! <span style="font-weight: 700;">Save Up</span> to
+                        <span style="color: red; font-weight: 700;">50%</span>
+                    </h1>
+                    <p class="main-offer__subtitle">For rent we offer only new models of cars in perfect technical
+                        condition. All cars have full motor hull and diagnosed, we will select the best cars.</p>
+                    <a href="#rent">
+                        <button class="button-black">
+                            See all cars
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome" id="welcome">
+        <div class="container">
+            <div class="welcome-offer">
+                <h2 class="welcome-title">Welcome</h2>
+
+                <div class="welcome-items">
+                    <div class="welcome-items__item">
+                        <div class="welcome-item__image">
+                            <img src="assets/motor.png" alt="">
+                        </div>
+                        <div class="welcome-item__text">
+                            <h3 class="welcome-item__title">Largest Dealership of Cars</h3>
+                            <p class="welcome-item__subtitle">RentEnd is nisi aliquip ex consequat duis velit esse cillum
+                                dolore fugiat nulla pariatur excepteur sint occaecat.</p>
+                        </div>
+                    </div>
+                    <div class="welcome-items__item">
+                        <div class="welcome-item__image">
+                            <img src="assets/speed.png" alt="">
+                        </div>
+                        <div class="welcome-item__text">
+                            <h3 class="welcome-item__title">We Offers fastest car-rent service</h3>
+                            <p class="welcome-item__subtitle">RentEnd is nisi aliquip ex consequat duis velit esse cillum
+                                dolore fugiat nulla pariatur excepteur sint occaecat.</p>
+                        </div>
+                    </div>
+                    <div class="welcome-items__item">
+                        <div class="welcome-item__image">
+                            <img src="assets/safe.png" alt="">
+                        </div>
+                        <div class="welcome-item__text">
+                            <h3 class="welcome-item__title">Multipoint Safety Checks</h3>
+                            <p class="welcome-item__subtitle">RentEnd is nisi aliquip ex consequat duis velit esse cillum
+                                dolore fugiat nulla pariatur excepteur sint occaecat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rent" id="rent">
+        <div class="container">
+            <div class="rent-offer">
+                <h2 class="rent-title">Best rented</h2>
+
+                <div class="rent-cars">
+                    <div class="rent-cars__chose">
+                        <button class="active" id="sedanBtn">Sedan</button>
+                        <button id="coupeBtn">Coupe</button>
+                        <button id="hatchbackBtn">Hatchback</button>
+                    </div>
+                    <div class="cars-items" id="carsItems"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rating" id="rating">
+
+        <div class="rating-offer">
+            <div class="rating-items">
+                <div class="rating-item">
+                    <span>3874</span>
+                    <p>Vehicles Stock</p>
+                </div>
+                <div class="rating-item">
+                    <span>10+</span>
+                    <p>Dealers Served</p>
+                </div>
+                <div class="rating-item">
+                    <span>6403</span>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="rating-item">
+                    <span>28</span>
+                    <p>Exclusive Cars</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculate" id="calculate">
+        <h2 class="calculate-title">Do you want to know what the rental price will be?</h2>
+        <div class="slider-container">
+            <div class="slider-title">
+                <h2>Select the number of days for which you want to rent a car</h2>
+            </div>
+            <div class="daysRange">
+                <input type="range" id="daysRange" min="1" max="30" value="15">
+                <output class="output" for="daysRange" id="daysOutput"></output>
+                <div class="priceOutput-title">
+                  <span>Your price</span>
+                    <div class="priceOutput" id="priceOutput">$50</div>
+                </div>
+
+                <div class="min">1</div>
+                <div class="max">30</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="conditions" id="conditions">
+        <div class="container">
+            <h2 class="conditions-title">What we offer?</h2>
+            <div class="conditions-offer">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            <span class="accordion-item-header-title">Special rates on car booking</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down accordion-item-header-icon">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="accordion-item-description-wrapper">
+                            <div class="accordion-item-description">
+                                <hr>
+                                <p>
+                                    Explore our extensive fleet of vehicles, each meticulously maintained and ready to
+                                    elevate your travel experience. From sleek sedans to rugged SUVs, we offer a diverse
+                                    selection to suit any occasion or preference. Whether you're navigating city streets
+                                    or embarking on a scenic road trip, our rental options provide the perfect
+                                    combination of style, comfort, and performance. And with our special pricing, you
+                                    can enjoy premium transportation without breaking the bank. Don't settle for
+                                    ordinary rentals—discover the extraordinary with us.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            <span class="accordion-item-header-title">Mobile phone reservation</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down accordion-item-header-icon">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="accordion-item-description-wrapper">
+                            <div class="accordion-item-description">
+                                <hr>
+                                <p> Booking your preferred car is just a phone call away. Simply dial our reservation
+                                    hotline, and our friendly team will assist you in selecting the perfect vehicle for
+                                    your needs. Whether you have specific requirements or need recommendations based on
+                                    your itinerary, we're here to ensure a seamless reservation process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            <span class="accordion-item-header-title">Exclusive cars rental</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down accordion-item-header-icon">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="accordion-item-description-wrapper">
+                            <div class="accordion-item-description">
+                                <hr>
+                                <p>Tailor your driving experience to your exact desires by choosing from our diverse
+                                    catalog of vehicles. Whether you prefer the practicality of a standard car or the
+                                    allure of an exclusive or classic model, we have the perfect option to match your
+                                    preferences. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details" id="details">
+        <div class="container">
+            <div class="details-offer">
+                <div class="details-items">
+                    <div class="details-items__item">
+                        <div class="details-image">
+                            <img src="assets/phone.png" alt="">
+                        </div>
+                        <div class="details-text">
+                            <span class="details-text__title">Phone</span>
+                            <p class="details-text__subtitle">+38093-513-24155</p>
+                        </div>
+                    </div>
+                    <div class="details-items__item">
+                        <div class="details-image">
+                            <img src="assets/mail.png" alt="">
+                        </div>
+                        <div class="details-text">
+                            <span class="details-text__title">E-mail</span>
+                            <p class="details-text__subtitle">example@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="details-items__item">
+                        <div class="details-image">
+                            <img src="assets/location.png" alt="">
+                        </div>
+                        <div class="details-text">
+                            <span class="details-text__title">Location</span>
+                            <p class="details-text__subtitle">Ukraine, Kyiv</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="contact-title">Order a call</h2>
+            <div class="contact-offer">
+                <div class="form-container">
+                    <form class="form" action="#" method="post">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-text">
+            <p>Copyright © 2024. All rights reserved</p>
+            <br>
+            <p>NON COMMERCIAL USE</p>
+            <br>
+            <p>Designed and developed by Syn-Front.dev</p>
+        </div>
+    </footer>
+
+
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
